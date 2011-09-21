@@ -1,0 +1,16 @@
+fhtt\entities\Building:
+    type: entity
+    id:
+        id: 
+            type: integer
+            generator: 
+                strategy: AUTO
+    fields: 
+        name: 
+            type: string
+            length: 50
+    oneToMany:
+        rooms:
+            targetEntity: Room
+            mappedBy: building
+

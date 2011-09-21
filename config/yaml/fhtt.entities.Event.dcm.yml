@@ -1,0 +1,28 @@
+fhtt\entities\Event:
+    type: entity
+    id:
+        id: 
+            type: integer
+            generator: 
+                strategy: AUTO
+    fields: 
+        groupDef: 
+            type: string
+            length: 10
+        day: 
+            type: integer
+        start_time: 
+            type: time
+        duration: 
+            type: integer
+            default: 90
+    manyToOne:
+        type: 
+            targetEntity: Type
+        host:
+            targetEntity: Host
+        module:
+            targetEntity: Module
+        room:
+            targetEntity: Room
+

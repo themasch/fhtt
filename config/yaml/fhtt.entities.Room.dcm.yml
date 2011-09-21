@@ -1,0 +1,21 @@
+fhtt\entities\Room:
+    type: entity
+    id:
+        id:
+            type: integer
+            generator: 
+                strategy: AUTO
+    fields: 
+        room: 
+          type: integer
+        section:
+          type: string
+          length: 5
+          default: null
+        level:
+          type: string
+          length: 5
+          default: null
+    manyToOne:
+      building:
+        targetEntity: Building

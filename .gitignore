@@ -1,0 +1,3 @@
+config/db.php
+lib/fhtt/entities/*
+lib/fhtt/proxies/*

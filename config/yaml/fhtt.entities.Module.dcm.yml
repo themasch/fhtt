@@ -1,0 +1,15 @@
+fhtt\entities\Module:
+    type: entity
+    id:
+        id:
+            type: integer
+            generator: 
+                strategy: AUTO
+    fields: 
+        semester: 
+            type: integer
+        name: 
+            type: string
+    manyToOne:
+        program:
+          targetEntity: Program

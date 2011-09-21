@@ -1,0 +1,15 @@
+fhtt\entities\Host:
+    type: entity
+    id:
+        id: 
+            type: integer
+            generator: 
+                strategy: AUTO
+    fields:
+        short: 
+            type: string
+            length: 10
+        name:
+            type: string
+            length: 100
+
